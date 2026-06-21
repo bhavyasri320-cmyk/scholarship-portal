@@ -1,0 +1,82 @@
+{
+    "info": {
+        "name": "Scholarship Portal Database",
+        "version": "1.0",
+        "description": "JSON database for scholarship applications",
+        "lastUpdated": "2026-06-21"
+    },
+    "schema": {
+        "application": {
+            "id": "string - Unique application ID (e.g., SCH123456)",
+            "name": "string - Full name of student",
+            "email": "string - Email address",
+            "mobile": "string - Mobile number",
+            "course": "string - Course/Program name",
+            "income": "number - Annual family income in INR",
+            "scholarshipType": "string - Type of scholarship applied",
+            "address": "string - Complete address",
+            "status": "string - Pending/Approved/Rejected",
+            "appliedOn": "string - Date and time of application"
+        }
+    },
+    "applications": [],
+    "settings": {
+        "theme": "light",
+        "autoSave": true,
+        "exportFormat": "xlsx"
+    },
+    "scholarshipTypes": [
+        {
+            "name": "Merit Scholarship",
+            "description": "For students with exceptional academic performance",
+            "maxAmount": 50000,
+            "currency": "INR",
+            "duration": "per year",
+            "icon": "fa-medal"
+        },
+        {
+            "name": "Need-Based Scholarship",
+            "description": "Financial assistance for economically weaker sections",
+            "maxAmount": 75000,
+            "currency": "INR",
+            "duration": "per year",
+            "icon": "fa-hand-holding-heart"
+        },
+        {
+            "name": "Sports Scholarship",
+            "description": "For talented athletes at state or national level",
+            "maxAmount": 40000,
+            "currency": "INR",
+            "duration": "per year",
+            "icon": "fa-running"
+        },
+        {
+            "name": "Minority Scholarship",
+            "description": "Supporting students from minority communities",
+            "maxAmount": 60000,
+            "currency": "INR",
+            "duration": "per year",
+            "icon": "fa-users"
+        },
+        {
+            "name": "Research Scholarship",
+            "description": "For students pursuing research programs",
+            "maxAmount": 80000,
+            "currency": "INR",
+            "duration": "per year",
+            "icon": "fa-flask"
+        }
+    ],
+    "courses": [
+        "B.Tech / B.E.",
+        "B.Sc",
+        "B.Com",
+        "B.A",
+        "M.Tech / M.E.",
+        "M.Sc",
+        "MBA",
+        "MCA",
+        "PhD",
+        "Other"
+    ]
+}
